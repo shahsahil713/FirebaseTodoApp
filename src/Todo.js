@@ -10,6 +10,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import db from "./firebase";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
+import EditIcon from '@material-ui/icons/Edit';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -54,17 +55,17 @@ function Todo(props) {
           <Button onClick={updateTodo}>Update Me</Button>
         </div>
       </Modal>
-      <List>
-        <ListItem>
-          <ListItemText primary={props.todo.todo} secondary="Dummy Deadline" />
-        </ListItem>
-        <Button onClick={(e) => setOpen(true)}>Edit Me</Button>
-        <DeleteForeverIcon
+     
+        <ListItem className="listData">
+          <EditIcon color="primary"  onClick={(e) => setOpen(true)} className="editIcon"/>
+        {/* <Button onClick={(e) => setOpen(true)}>Edit Me</Button> */}
+        <DeleteForeverIcon color="secondary" className="deleteIcon"
           onClick={(e) => {
             db.collection("todos").doc(props.todo.id).delete();
           }}
         />
-      </List>
+          <ListItemText primary={props.todo.todo} className="todoText"/>
+        </ListItem>
     </>
   );
 }
