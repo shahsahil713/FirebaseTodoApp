@@ -1,38 +1,105 @@
+/* body {
+  background-color: #606060ff;
+}
 .App {
   text-align: center;
+  background-color: #adefd1ff;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  color: #00203fff;
+  padding: 30px;
+}
+.App form {
+  padding: 20px 0px 0px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .msg {
+  color: crimson;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App AddCircleIcon {
+  margin-top: 20px;
+}
+.addBtn {
+  margin: 7px 0px 0px 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  min-width: 51px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #1976d2;
+}
+.active {
+  opacity: 1;
+}
+.disabled {
+  opacity: 0.5;
+}
+.listData {
+  margin-left: 60px;
+}
+.todoText {
+  color: #606060;
+}
+.editIcon .deleteIcon {
+  padding-right: 10px;
+}
+.MuiSvgIcon-root {
+  font-size: 1.7rem;
   color: white;
+  margin-top: 3px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .App {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+} */
+
+body {
+  background-color: #606060ff;
+}
+.App {
+  text-align: center;
+  background-color: #adefd1ff;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+.MuiButton-root {
+  min-width: 20px;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0px 0px 10px;
+  border-radius: 50%;
+}
+.MuiList-padding {
+  width: 65%;
+  margin: 25px auto;
+}
+.checkColor {
+  color: rgb(10, 117, 10);
+}
+.makeStyles-paper-2 {
+  padding: 14px 19px 4px;
+  width: 75%;
+  height: 160px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #adefd1ff;
+  }
+  .App {
+    width: 90%;
+  }
+  .MuiList-padding {
+    width: 94%;
   }
 }
